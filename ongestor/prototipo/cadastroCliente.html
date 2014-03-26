@@ -147,8 +147,8 @@
                                           <td>08/06/1992</td>
                                           <td>luiz.alberto1723@gmail.com</td>
                                           <td>
-                                            <a href="#" class="btn btn-info btn-circle"><li class="glyphicon glyphicon-pencil"></li></a>
-                                            <a href="#" class="btn btn-danger btn-circle"><li class="glyphicon glyphicon-remove"></li></a>
+                                            <a href="#" class="btn btn-info btn-circle" onclick="$('#edicaoCliente').modal('show');"><li class="glyphicon glyphicon-pencil"></li></a>
+                                            <a href="#" class="btn btn-danger btn-circle" onclick="$('#remocaoCliente').modal('show');"><li class="glyphicon glyphicon-remove"></li></a>
                                           </td>
                                       </tr>
                                   </tbody>
@@ -211,7 +211,79 @@
       </div>
     </div>
 
+    <!-- EDITAR CLIENTE -->
+    <!-- EDITAR CLIENTE -->
+    <!-- EDITAR CLIENTE -->
+    <!-- EDITAR CLIENTE -->
 
+    <div class="modal fade" id="edicaoCliente" tabindex="-1" role="dialog" aria-labelledby="edicaoClienteLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="edicaoClienteLabel">Editar Cliente</h4>
+          </div>
+          <div class="modal-body">
+            
+            <p>
+              <label for="nome">Nome:</label>
+              <input class="form-control" id="nome" name="nome">
+            </p>
+            <p>
+              <label for="endereco">Endereço:</label>
+              <input class="form-control" id="endereco" name="endereco">
+            </p>
+            <p>
+              <label for="telefone">Telefone:</label>
+              <input class="form-control" id="telefone" name="telefone">
+            </p>
+            <p>
+              <label for="celular">Celular:</label>
+              <input class="form-control" id="celular" name="celular">
+            </p>
+            <p>
+              <label for="cpf">CPF:</label>
+              <input class="form-control" id="cpf" name="cpf">
+            </p>
+            <p>
+              <label for="nascimento">Data de Nascimento:</label>
+              <input class="form-control" id="nascimento" name="nascimento">
+            </p>
+            <p>
+              <label for="email">E-mail:</label>
+              <input class="form-control" id="email" name="email">
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Salvar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REMOVER CLIENTE -->
+    <!-- REMOVER CLIENTE -->
+    <!-- REMOVER CLIENTE -->
+    <!-- REMOVER CLIENTE -->
+    <div class="modal fade" id="remocaoCliente" tabindex="-1" role="dialog" aria-labelledby="remocaoClienteLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="remocaoClienteLabel">Remover Cliente</h4>
+          </div>
+          <div class="modal-body">
+            
+            Deseja realmente remover o cliente?
+            
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-danger">Remover</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 </body>
 
