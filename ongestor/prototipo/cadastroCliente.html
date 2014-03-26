@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>On Gestor</title>
+
+    <!-- Core CSS - Include with every page -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Core Scripts - Include with every page -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="js/sb-admin.js"></script>
+
+    <!-- Page-Level Plugin Scripts - Tables -->
+    <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+
+    <!-- SB Admin Scripts - Include with every page -->
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').dataTable();
+    });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="navbar navbar-default">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">On Gestor</a>
+      </div>
+      <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cliente <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Vendas</a></li>
+              <li><a href="#">Encomendas</a></li>
+              <li><a href="cadastroCliente.html">Cadastro Cliente</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produto <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Cadastro Produto</a></li>
+              <li><a href="#">Cadastro Categoria</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Financeiro <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Contas Pagar</a></li>
+              <li><a href="#">Contas Receber</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Relatórios <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Clientes</a></li>
+              <li><a href="#">Vendas</a></li>
+              <li><a href="#">Encomendas</a></li>
+              <li><a href="#">Contas Pagar</a></li>
+              <li><a href="#">Contas Receber</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuário <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Cadastro Usuário</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Sair</a></li>
+                </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FUNCIONALIDADES ABAIXO -->
+    <!-- FUNCIONALIDADES ABAIXO -->
+    <!-- FUNCIONALIDADES ABAIXO -->
+    <!-- FUNCIONALIDADES ABAIXO -->
+
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-12 page-header">
+                    <h1>Clientes</h1>
+                    <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#novoCliente">Novo Cliente</a>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div>
+         <div>
+
+
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          Clientes Cadastrados
+                      </div>
+                      <!-- /.panel-heading -->
+                      <div class="panel-body">
+                          <div class="table-responsive">
+                              <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                  <thead>
+                                      <tr>
+                                          <th>Nome</th>
+                                          <th>Telefone</th>
+                                          <th>Celular</th>
+                                          <th>Nascimento</th>
+                                          <th>E-mail</th>
+                                          <th>Ações</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr class="odd gradeX">
+                                          <td>Luiz Alberto da Silva Junior</td>
+                                          <td>33572190</td>
+                                          <td>99154265</td>
+                                          <td>08/06/1992</td>
+                                          <td>luiz.alberto1723@gmail.com</td>
+                                          <td>
+                                            <a href="#" class="btn btn-info btn-circle"><li class="glyphicon glyphicon-pencil"></li></a>
+                                            <a href="#" class="btn btn-danger btn-circle"><li class="glyphicon glyphicon-remove"></li></a>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+
+
+    <!-- MODAL NOVO CLIENTE -->
+    <!-- MODAL NOVO CLIENTE -->
+    <!-- MODAL NOVO CLIENTE -->
+    <!-- MODAL NOVO CLIENTE -->
+    <div class="modal fade" id="novoCliente" tabindex="-1" role="dialog" aria-labelledby="novoClienteLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="novoClienteLabel">Novo Cliente</h4>
+          </div>
+          <div class="modal-body">
+            
+            <p>
+              <label for="nome">Nome:</label>
+              <input class="form-control" id="nome" name="nome">
+            </p>
+            <p>
+              <label for="endereco">Endereço:</label>
+              <input class="form-control" id="endereco" name="endereco">
+            </p>
+            <p>
+              <label for="telefone">Telefone:</label>
+              <input class="form-control" id="telefone" name="telefone">
+            </p>
+            <p>
+              <label for="celular">Celular:</label>
+              <input class="form-control" id="celular" name="celular">
+            </p>
+            <p>
+              <label for="cpf">CPF:</label>
+              <input class="form-control" id="cpf" name="cpf">
+            </p>
+            <p>
+              <label for="nascimento">Data de Nascimento:</label>
+              <input class="form-control" id="nascimento" name="nascimento">
+            </p>
+            <p>
+              <label for="email">E-mail:</label>
+              <input class="form-control" id="email" name="email">
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Salvar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>
